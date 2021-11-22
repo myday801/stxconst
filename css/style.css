@@ -24,7 +24,7 @@ li {
 }
 
 html {
-    font-size: 16px;
+    font-size: 10px;
     overflow-x: hidden;
 }
 
@@ -52,7 +52,7 @@ body {
 .container {
     position: relative;
     display: block;
-    width: 1200px;
+    width: 120rem;
     margin: 0 auto;
 }
 
@@ -68,41 +68,34 @@ body {
     top: 0;
     display: block;
     width: 100%;
-    height: 73px;
+    height: 7.3rem;
     z-index: 999;
     background: #fff;
-    border-bottom: 1px solid #e9e9e9;
+    border-bottom: 0.1rem solid #e9e9e9;
 
     -webkit-box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 20%);
     box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 20%);
 }
 
 .header>.container {
-    height: 73px;
+    height: 8rem;
 }
 
 .logo {
     position: absolute;
-    left: -275px;
-    top: 21px;
+    left: -27.5rem;
+    top: 2.1rem;
     display: block;
-    width: 152px;
-    height: 34px;
+    width: 15.2rem;
+    height: 3.4rem;
     background: url('../images/logo.png') no-repeat center;
     font-size: 0;
 }
 
-.gnb {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-}
-
 .language {
     position: absolute;
-    right: -270px;
-    top: 32px;
+    right: -27rem;
+    top: 3.2rem;
     display: block;
 }
 
@@ -125,17 +118,17 @@ body {
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;
-    padding: 0 10px;
+    padding: 0 1rem;
 }
 
 .language-list>li>a:after {
     content: '';
     position: absolute;
     right: 0;
-    top: 3px;
+    top: 0.3rem;
     display: block;
-    width: 1px;
-    height: 9px;
+    width: 0.1rem;
+    height: 0.9rem;
     background: #999;
 }
 
@@ -147,11 +140,97 @@ body {
     color: #000 !important;
 }
 
+.gnb {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+}
+
+.depth1 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 106.8rem;
+}
+
+.depth1>li {
+    position: relative;
+    display: block;
+    width: 17.8rem;
+    height: 8rem;
+    line-height: 7.3rem;
+    float: left;
+}
+
+.depth1 > li > a {
+    display: inline-block;
+    color: #000;
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 8rem;
+}
+
+.depth1 li a:hover {
+    color: #ed1c24;
+}
+
+.depth1-active {
+    color: #ec1c24 !important;
+}
+
+.depth2 {
+    position: absolute;
+    left: 0;
+    top: 7.3rem;
+    display: block;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    transition: height 0.3s ease-in-out;
+}
+
+.depth2-active {
+    height: 28rem;
+}
+
+.submenu {
+    position: relative;
+    display: block;
+    width: 106.8rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+
+.submenu>li{
+    position: relative;
+    display: block;
+    width: 17.8rem;
+    float: left;
+}
+
+.depth2-menu {}
+
+.depth2-menu >li {
+    line-height: 2.7rem;
+}
+
+.depth2-menu > li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
 /*비주얼*/
 .visual {
     position: relative;
     display: block;
-    height: 910px;
+    height: 91rem;
     background: url('../images/img_visual.png') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
